@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +9,8 @@ namespace BrowserSimulator
     internal class Simulator
     {
         //membervariable
-        private StringStack<string> historyStack = new StringStack<string>();
-        private StringStack<string> forwardStack = new StringStack<string>();
+        private StringStack historyStack = new StringStack();
+        private StringStack forwardStack = new StringStack();
         private string currentUrl = "";
         
         public void Run()
@@ -89,3 +89,4 @@ namespace BrowserSimulator
         }
     }
 }
+*/

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserSimulator", "BrowserSimulator\BrowserSimulator.csproj", "{CF2A9752-4299-4D48-8975-C30D37383733}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserSimulatorTests", "BrowserSimulatorTests\BrowserSimulatorTests.csproj", "{D2C376DE-5DEF-471C-823D-D99033442EF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserSimulatorTests", "BrowserSimulatorTests\BrowserSimulatorTests.csproj", "{D2C376DE-5DEF-471C-823D-D99033442EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{259B9850-2E07-473E-98D0-231E05214819}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D2C376DE-5DEF-471C-823D-D99033442EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2C376DE-5DEF-471C-823D-D99033442EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2C376DE-5DEF-471C-823D-D99033442EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{259B9850-2E07-473E-98D0-231E05214819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259B9850-2E07-473E-98D0-231E05214819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259B9850-2E07-473E-98D0-231E05214819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259B9850-2E07-473E-98D0-231E05214819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

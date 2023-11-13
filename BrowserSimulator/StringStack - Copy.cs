@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace BrowserSimulator
 {
-    public class StringStack<T>
+    public class StringStack
     {
-        public T[] values;
+        public string[] values;
         public int index;
 
         public StringStack() 
         {
             //in constructor string[] values creates a new string for inside constructor only
-            values = new T[10];
+            values = new string[10];
         }
         
         //push add to stack
@@ -26,13 +26,14 @@ namespace BrowserSimulator
         }
 
         //pop remove from stack
-        public T Pop()
+        public string Pop()
         {
             if (index == 0)
             {
                 Console.WriteLine("There are no URLs left in the Stack");
                 //return default(t) setzt für alle typs default wert
-                throw new InvalidOperationException("ERROR 404");
+                //throw new InvalidOperationException("ERROR 404");
+                return("ERROR 404")
             } else
             {
                 // return this.values[index--] does also work
@@ -41,14 +42,14 @@ namespace BrowserSimulator
             }
         }
 
-        public T Peek()
+        public string Peek()
         { 
             return this.values[index--];
         }
 
         public void Swap()
         {
-            T tempIndex = this.values[index-1];
+            string tempIndex = this.values[index-1];
             this.values[index - 1] = this.values[index - 2];
             this.values[index - 2] = tempIndex;
         }
@@ -66,3 +67,4 @@ namespace BrowserSimulator
         public bool IsFull => index == values.Length;
     }
 }
+*/
