@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace BrowserSimulator
 {
-    internal class StringStack
+    public class StringStack
     {
-        string[] values;
-        int index;
+        public string[] values;
+        public int index;
 
         public StringStack() 
         {
@@ -39,5 +39,29 @@ namespace BrowserSimulator
                 return this.values[index];
             }
         }
+
+        public string Peek()
+        { 
+            return this.values[index--];
+        }
+
+        public void Swap()
+        {
+            string tempIndex = this.values[index-1];
+            this.values[index - 1] = this.values[index - 2];
+            this.values[index - 2] = tempIndex;
+        }
+
+        public void Clear()
+        {
+            Array.Clear(values, 0, values.Length);
+            index = 0;
+        }
+
+        public bool IsEmpty {  get { return index == 0; } }
+
+        public int Count { get { return values.Length; } }
+
+        public bool IsFull => index == values.Length;
     }
 }
