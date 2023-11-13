@@ -28,9 +28,16 @@ namespace BrowserSimulator
         //pop remove from stack
         public string Pop()
         {
-            // return this.values[index--] does also work
-           index--;
-           return this.values[index];
+            if (index == 0)
+            {
+                Console.WriteLine("There are no URLs left in the Stack");
+                return ("ERROR 404");
+            } else
+            {
+                // return this.values[index--] does also work
+                index--;
+                return this.values[index];
+            }
         }
     }
 }

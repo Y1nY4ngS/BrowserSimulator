@@ -12,7 +12,7 @@ namespace BrowserSimulator
         {
             while (true)
             {
-                Console.Write("Geben sie eine URL ein:");
+                Console.Write("Please put an URL in:");
                 string url = Console.ReadLine();
                 if (url == "e")
                 {
@@ -24,7 +24,7 @@ namespace BrowserSimulator
 
         public void BrowseURL(string url)
         {
-            Console.WriteLine($"Lade {url}");
+            Console.WriteLine($"Loading... {url}");
 
         }
     }
